@@ -3387,6 +3387,7 @@ GameObject:
   - component: {fileID: 988245998}
   - component: {fileID: 988245997}
   - component: {fileID: 988246000}
+  - component: {fileID: 988246004}
   - component: {fileID: 988246001}
   - component: {fileID: 988246002}
   - component: {fileID: 988246003}
@@ -3474,7 +3475,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988245996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb24e2c7d9021ef47ab6f5ee144098a1, type: 3}
   m_Name: 
@@ -3496,8 +3497,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 2
+  m_AngularDamping: 0.2
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3571,6 +3572,22 @@ MonoBehaviour:
   destroyDelay: 0.3
   noChickenColor: {r: 1, g: 1, b: 1, a: 1}
   hasChickenColor: {r: 0.9, g: 0.5, b: 0, a: 1}
+--- !u!114 &988246004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988245996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fde44fa6eef08e478f73e33a402ab62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accleration: 20
+  steering: 3
+  maxSpeed: 10
+  driftFactor: 0.95
 --- !u!1 &1002537324
 GameObject:
   m_ObjectHideFlags: 0
